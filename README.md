@@ -23,7 +23,18 @@ AI-powered plant disease detection system using TensorFlow and Flask.
 - Pepper/Bell Pepper (2 conditions)
 
 ## Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
+
+### Setup
 ```bash
+# Clone the repository
+git clone https://github.com/Shrau26/PlantCare-AI.git
+cd PlantCare-AI
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 

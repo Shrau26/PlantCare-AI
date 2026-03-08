@@ -2,14 +2,32 @@
 
 AI-powered plant disease detection system using TensorFlow and Flask.
 
-Features:
+## Features
 - Upload plant leaf image
-- AI predicts disease
-- 15 plant disease classes
+- AI predicts disease with confidence score
+- 15 plant disease classes (Tomato, Potato, Pepper)
+- Detailed treatment remedies for each disease
 - Web interface using Flask
+- REST API endpoints
 
-Tech Stack:
+## Tech Stack
 - Python
-- TensorFlow
+- TensorFlow (MobileNetV2)
 - Flask
 - OpenCV
+- Pillow
+
+## Supported Plants
+- Tomato (10 conditions)
+- Potato (3 conditions)
+- Pepper/Bell Pepper (2 conditions)
+
+## Installation
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+1. Train the model: `python train.py`
+2. Run the app: `python app.py`
+3. Access at: `http://localhost:5000`

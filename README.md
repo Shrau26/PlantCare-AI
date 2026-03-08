@@ -29,5 +29,6 @@ pip install -r requirements.txt
 
 ## Usage
 1. Train the model: `python train.py`
-2. Run the app: `python app.py`
-3. Access at: `http://localhost:5000`
+2. Run the Flask app: `python app.py`
+3. Open browser and access at: `http://localhost:5000`
+4. Upload a plant leaf image to get disease prediction

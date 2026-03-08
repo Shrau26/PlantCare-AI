@@ -38,6 +38,30 @@ cd PlantCare-AI
 pip install -r requirements.txt
 ```
 
+## API Endpoints
+
+### POST /predict
+Upload a plant leaf image to get disease prediction.
+
+**Request:**
+- Method: POST
+- Content-Type: multipart/form-data
+- Body: image file (png, jpg, jpeg, webp)
+
+**Response:**
+```json
+{
+  "disease": "Tomato — Early Blight",
+  "confidence": "95.2%",
+  "remedy": "Remove infected lower leaves...",
+  "category": "Fungal",
+  "severity": "Moderate"
+}
+```
+
+### GET /stats
+Get dashboard statistics about the model.
+
 ## Usage
 1. Train the model: `python train.py`
 2. Run the Flask app: `python app.py`
